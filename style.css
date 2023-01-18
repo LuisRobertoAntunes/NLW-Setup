@@ -1,10 +1,105 @@
-*{
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-  background-color: #09090A;
 
-  display: grid;
-  place-items: center;
+body {
   height: 100vh;
+
+  background-color: #09090a;
+  color: white;
+}
+
+header {
+  padding: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+
+  padding: 16px 24px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px; /*Espaço entre os elementos*/
+
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+  color: white;
+}
+
+form {
+  padding: 0 48px;
+
+  display: flex;
+}
+
+form .habits {
+  margin-top: 57px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+form .habit {
+  font-size: 32px;
+
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form .days {
+  margin-left: 32px;
+
+  display: flex;
+  gap: 48px;
+}
+
+form .day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 125%;
+
+  margin-bottom: 8px;
+  text-align: center;
+
+  color: #a1a1aa;
+}
+
+input {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+
+  border: 2px solid #27272a;
+  background-color: #18181b;
+  /*Retira a aparencia*/
+  appearance: none;
+  -webkit-appearance: none;
+}
+/*Pseudo-selector*/
+input:checked {
+  background-color: #8b5cf6;
+  border: 2px solid #a78bfa;
 }
