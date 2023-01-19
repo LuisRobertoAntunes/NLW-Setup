@@ -13,38 +13,48 @@ body {
 
 header {
   padding: 48px;
+  position: fixed;
+  width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  background-color: var(--background-color);
 }
 
 button {
+  padding: 16px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  display: flex;
+  gap: 12px; /*Espaço entre os elementos*/
+  justify-content: center;
+
+  border: 1px solid var(--violet-500);
+  background-color: transparent;
+}
+.btn-text {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 125%;
 
-  padding: 16px 24px;
-  border-radius: 8px;
+  margin-bottom: 0;
 
-  display: flex;
-  align-items: center;
-  gap: 12px; /*Espaço entre os elementos*/
-
-  border: 1px solid var(--violet-500);
-  background-color: transparent;
   color: var(--white);
 }
 
 form {
-  padding: 0 48px;
+  padding: 182px 48px 48px;
+  width: fit-content;
 
   display: flex;
 }
 
 form .habits {
-  margin-top: 82px;
+  margin-top: 50px;
 
   display: flex;
   flex-direction: column;
@@ -75,13 +85,12 @@ form .day {
   gap: 24px;
 }
 
-.day div {
+.days {
   font-family: "Roboto Mono", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 125%;
 
-  margin-bottom: 8px;
   text-align: center;
 
   color: var(--zinc-400);
@@ -91,6 +100,7 @@ input {
   width: 64px;
   height: 64px;
   border-radius: 8px;
+  cursor: pointer;
 
   border: 2px solid var(--zinc-800);
   background-color: var(--zinc-900);
@@ -98,6 +108,7 @@ input {
   appearance: none;
   -webkit-appearance: none;
 }
+
 /*Pseudo-selector*/
 input:checked {
   background-color: var(--violet-500);

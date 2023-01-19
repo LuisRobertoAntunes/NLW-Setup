@@ -10,8 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <title>Habits</title>
   </head>
   <body>
@@ -20,117 +21,23 @@
 
       <button>
         <img src="assets/plus.svg" alt="Ícone sinal de mais roxo" />
-        Registrar o meu dia
+        <div class="btn-text">
+          <p>Registrar o meu dia</p>
+        </div>
       </button>
     </header>
-    
+
     <form id="form-habits">
       <div class="habits">
-        <div class="habit">🏃‍♂️</div>
-        <div class="habit">💧</div>
-        <div class="habit">🍎</div>
+        <div class="habit" data-name="run"><p>🏃🏽‍♂️</p></div>
+        <div class="habit" data-name="water"><p>💧</p></div>
+        <div class="habit" data-name="food"><p>🍎</p></div>
       </div>
 
-      <div class="days">
-        <div class="day">
-          <div>Dom <br> 22/01</div>
-          
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-
-        <div class="day">
-          <div>Seg<br> 23/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-
-        <div class="day">
-          <div>Ter<br> 24/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-
-        <div class="day">
-          <div>Qua<br> 25/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-
-        <div class="day">
-          <div>Qui<br> 26/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-
-        <div class="day">
-          <div>Sex<br> 27/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-
-        <div class="day">
-          <div>Sab<br> 28/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-
-        <div class="day">
-          <div>Dom<br> 29/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-
-        <div class="day">
-          <div>Seg<br> 30/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-
-        <div class="day">
-          <div>Ter<br> 31/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-
-        <div class="day">
-          <div>Qua<br> 01/02</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-
-        <div class="day">
-          <div>Qui<br> 02/02</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-
-        <div class="day">
-          <div>Sex<br> 03/02</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-
-        <div class="day">
-          <div>Sab<br> 04/02</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-        </div>
-      </div>
+      <div class="days"></div>
     </form>
+
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
