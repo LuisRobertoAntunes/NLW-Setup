@@ -1,9 +1,10 @@
 :root{
-  --background-color: #1E1E1E;
+  --background-color: #1a1a1a;
   --zinc-400:#A1A1AA;
   --zinc-800:#27272A;
   --zinc-900:#18181B;
-  --violet-400:#A78BFA;
-  --violet-500:#8B5CF6;
+  --border-input:#22D3EE;
+  --backgroud-color-input:#06B6D4;
   --white: #fff;
+  
 }

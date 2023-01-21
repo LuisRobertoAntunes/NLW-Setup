@@ -9,6 +9,10 @@ body {
 
   background-color: var(--background-color);
   color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
 }
 
 header {
@@ -32,9 +36,10 @@ button {
   gap: 12px; /*Espaço entre os elementos*/
   justify-content: center;
 
-  border: 1px solid var(--violet-500);
+  border: 1px solid var(--backgroud-color-input);
   background-color: transparent;
 }
+
 .btn-text {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -42,8 +47,14 @@ button {
   line-height: 125%;
 
   margin-bottom: 0;
+  transition: .3s;
 
   color: var(--white);
+}
+
+button:hover{
+  background-color: var(--backgroud-color-input);
+  border: 2px solid var(--border-input);
 }
 
 form {
@@ -107,10 +118,34 @@ input {
   /*Retira a aparencia*/
   appearance: none;
   -webkit-appearance: none;
+  transition: .3s;
 }
 
 /*Pseudo-selector*/
 input:checked {
-  background-color: var(--violet-500);
-  border: 2px solid var(--zinc-400);
+  background-color: var(--backgroud-color-input);
+  border: 2px solid var(--border-input);
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+  
+}
+input:hover{
+  background-color: var(--backgroud-color-input);
+  border: 2px solid var(--border-input);
+}
+.swal2-confirm{
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+
+  transition: .1s;
+
+  color: var(--white);
+  background-color: var(--backgroud-color-input);
+}
+.swal2-confirm:hover{
+  border: 2px solid var(--border-input);
 }
