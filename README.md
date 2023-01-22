@@ -22,7 +22,7 @@
 
 ## :bookmark: Sobre
 
-O **Habits** é uma aplicação Web e Mobile feita para auxiliar a rastrar os hábitos do dia dia.
+O **Habits** é uma aplicação Web e Mobile feita para auxiliar a rastrear os hábitos do dia dia.
 
 Essa aplicação foi realizada durante as aulas da **NLW** (Next Level Week). NLW é um evento exclusivo e gratuito, promovido pela [Rocketseat](https://www.rocketseat.com.br/) para ensino de tecnologias WEB.
 
