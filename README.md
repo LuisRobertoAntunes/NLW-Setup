@@ -46,7 +46,7 @@ Você pode visualizar o layout do projeto através do [**Link**](https://www.fig
 1. Faça um clone do repositório:
 
 ```sh
-  $ git clone https://github.com/LuisRobertoAntunes/Wireframe.git
+  $ git clone https://github.com/LuisRobertoAntunes/NLW-Setup
 ```
 
 ## :memo: Licença
